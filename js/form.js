@@ -21,7 +21,7 @@ async function handleSubmit(event) {
     if(response.ok) {
         $form.reset();
         const notificacion = new Notificacion({
-            mensaje: 'Tu mensaje ha sido enviado y pronto estaré en contacto contigo'
+            mensaje: 'Your message has been sent and I will be in touch with you soon.'
         })
         notificacion.mostrar();
         return;
